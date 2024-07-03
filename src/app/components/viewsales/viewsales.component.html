@@ -1,0 +1,38 @@
+<h2 class="text-4xl font-extrabold text-gray-800 mb-8 text-center">Sales View Management</h2>
+<div class="font-[sans-serif] overflow-x-auto flex justify-center m-5 p-10" style="width: 100%;">
+    <table class="min-w-full bg-white">
+      <thead class="bg-gray-800 whitespace-nowrap">
+        <tr>
+          <th class="p-4 text-left text-sm font-medium text-white">
+            Date
+          </th>
+          <th class="p-4 text-left text-sm font-medium text-white">
+            Reference
+          </th>
+          <th class="p-4 text-left text-sm font-medium text-white">
+            Quantity
+          </th>
+          <th class="p-4 text-left text-sm font-medium text-white">
+            Total
+          </th>
+        </tr>
+      </thead>
+
+      <tbody class="whitespace-nowrap">
+        <tr *ngFor="let sale of sales" class="even:bg-blue-50">
+          <td class="p-4 text-sm text-black">
+            {{ sale.sale_date }}
+          </td>
+          <td class="p-4 text-sm text-black">
+            {{ sale.product_id }}
+          </td>
+          <td class="p-4 text-sm text-black">
+            {{ sale.quantity }}
+          </td>
+          <td class="p-4 text-sm text-black">
+            {{ sale.total }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
