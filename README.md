@@ -1,27 +1,50 @@
-# SalesManagementApp
+# Sales and Product Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+## Description
+Ce projet est un système de gestion des ventes et des produits. Il comprend une API backend en PHP pour gérer les ventes et les produits, ainsi qu'une interface utilisateur en Angular pour visualiser et ajouter des ventes.
 
-## Development server
+## Table des matières
+- [Installation](#installation)
+- [API Endpoints](#api-endpoints)
+- [Composants Angular](#composants-angular)
+- [Contributions](#contributions)
+- [Licence](#licence)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Installation
 
-## Code scaffolding
+### Backend
+1. Clonez le dépôt :
+git clone https://github.com/AbdoulayeXYZ/sales-management-app
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+### Frontend
+1. Allez dans le répertoire `src/app` :
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Installez les dépendances :
+`npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Démarrez l'application Angular :
+`ng serve`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## API Endpoints
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Sales
+
+- **GET /sales** : Récupère toutes les ventes.
+- **POST /sales** : Crée une nouvelle vente.
+- **POST /sales?filter=date** : Filtre les ventes par date.
+
+### Products
+
+- **GET /products** : Récupère tous les produits.
+- **POST /products** : Crée un nouveau produit.
+
+## Composants Angular
+
+### `viewsales.component.ts`
+Ce composant affiche toutes les ventes.
+
+## Abdoulaye NIASSE - 77 314 70 59 - niasseabdoulaye64@gmail.com
